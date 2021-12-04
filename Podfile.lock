@@ -1,0 +1,32 @@
+PODS:
+  - LookinServer (1.0.4)
+  - Masonry (1.1.0)
+  - RHScan (1.0.2)
+
+DEPENDENCIES:
+  - LookinServer
+  - Masonry
+  - RHScan (from `https://github.com/huangkunhe/RHScan.git`)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - LookinServer
+    - Masonry
+
+EXTERNAL SOURCES:
+  RHScan:
+    :git: https://github.com/huangkunhe/RHScan.git
+
+CHECKOUT OPTIONS:
+  RHScan:
+    :commit: 6068ef55f5584565afb194f41fcfb52088cea785
+    :git: https://github.com/huangkunhe/RHScan.git
+
+SPEC CHECKSUMS:
+  LookinServer: 743c1681771d0a8dcc38825325a080c3186404a5
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  RHScan: 28440831253c3b17b5e72430faaf77bbd6a487a9
+
+PODFILE CHECKSUM: 48260ba0ad6918e4489ec1b1afa48f263f8a75b0
+
+COCOAPODS: 1.10.1
