@@ -34,7 +34,19 @@
     [demos addObject:[TJPushDemoModel configVCName:@"" params:@{} showName:@"泛型定义及使用" showSubTitle:@"_genericsDefinitionAndUsage" callBack:callBack]];
     [demos addObject:[TJPushDemoModel configVCName:@"" params:@{} showName:@"原生请求" showSubTitle:@"_originalRequest" callBack:callBack]];
     [demos addObject:[TJPushDemoModel configVCName:@"" params:@{} showName:@"获取本地IP及端口号" showSubTitle:@"_logIPAddress" callBack:callBack]];
-    
+    [demos addObject:[TJPushDemoModel configVCName:@"" params:@{} showName:@"NSThread 创建子线程" showSubTitle:@"_creatPthread" callBack:callBack]];
+    [demos addObject:[TJPushDemoModel configVCName:@"" params:@{} showName:@"GCD sync同步函数+串行队列，不会会开启多条线程 ，队列中的任务是串行执行的" showSubTitle:@"_syncConcureent" callBack:callBack]];
+    [demos addObject:[TJPushDemoModel configVCName:@"" params:@{} showName:@"异步函数，主队列：不会开辟线程" showSubTitle:@"_asyncMain" callBack:callBack]];
+    [demos addObject:[TJPushDemoModel configVCName:@"" params:@{} showName:@"GCD控制并发数" showSubTitle:@"_gcdControlConcurrency" callBack:callBack]];
+    [demos addObject:[TJPushDemoModel configVCName:@"" params:@{} showName:@"GCD 组内异步操作" showSubTitle:@"_gcdGroupOperation" callBack:callBack]];
+    [demos addObject:[TJPushDemoModel configVCName:@"" params:@{} showName:@"栅栏函数" showSubTitle:@"_barrierFunction" callBack:callBack]];
+    [demos addObject:[TJPushDemoModel configVCName:@"" params:@{} showName:@"快速迭代" showSubTitle:@"_rapidIteration" callBack:callBack]];
+    [demos addObject:[TJPushDemoModel configVCName:@"" params:@{} showName:@"NSOperationBlock" showSubTitle:@"_blockOperation" callBack:callBack]];
+    [demos addObject:[TJPushDemoModel configVCName:@"" params:@{} showName:@" NSOperation队列Block回调使用" showSubTitle:@"_blockOperationWithQueue" callBack:callBack]];
+    [demos addObject:[TJPushDemoModel configVCName:@"" params:@{} showName:@" NSOperation队列 回调使用" showSubTitle:@"_invocationOperationWithQueue" callBack:callBack]];
+    [demos addObject:[TJPushDemoModel configVCName:@"" params:@{} showName:@"下载图片合成" showSubTitle:@"_creatImage" callBack:callBack]];
+    [demos addObject:[TJPushDemoModel configVCName:@"" params:@{} showName:@"GCD 定时器" showSubTitle:@"_timingTask" callBack:callBack]];
+    [demos addObject:[TJPushDemoModel configVCName:@"" params:@{} showName:@"线程保活" showSubTitle:@"_threadToKeepAlive" callBack:callBack]];
     return demos;
 }
 

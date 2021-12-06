@@ -16,8 +16,30 @@
 
 @implementation RMFpsLabel
 
+- (instancetype)init{
+    if (self = [super init]) {
+        [self setupView];
+        [self addGesture];
+    }
+    return self;
+}
+/// 布局
+- (void)setupView{
+    
+}
+- (void)addGesture{
+    self.userInteractionEnabled = YES;
+    UILongPressGestureRecognizer *longGesture = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(longGesture:)];
+    [self addGestureRecognizer:longGesture];
+}
+
+
+- (void)longGesture:(UILongPressGestureRecognizer *)gesture{
+    self.center = [gesture locationInView:self.superview];
+}
+
 - (void)didMoveToSuperview {
-    self.frame = CGRectMake(15, 5, 80, 20);
+    self.frame = CGRectMake(0, 100, 80, 20);
     self.layer.cornerRadius = 10;
     self.layer.masksToBounds = YES;
     self.backgroundColor = [UIColor blackColor];

@@ -30,6 +30,8 @@
 		3475B128275B4F5E00B8D07C /* TJXibTapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3475B127275B4F5E00B8D07C /* TJXibTapView.m */; };
 		3475B12A275B4F6700B8D07C /* TJXibTapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3475B129275B4F6700B8D07C /* TJXibTapView.xib */; };
 		34B661DB26F584E200F973DD /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34B661DA26F584E200F973DD /* AVFoundation.framework */; };
+		34B858AA275DA26000245033 /* TJUpdateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B858A9275DA26000245033 /* TJUpdateView.m */; };
+		34B858AD275DF83B00245033 /* TJDataSourceController+Thread.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B858AC275DF83B00245033 /* TJDataSourceController+Thread.m */; };
 		34EABF4926E740A900B24629 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 34EABF4826E740A900B24629 /* AppDelegate.m */; };
 		34EABF4F26E740A900B24629 /* TJLicenseInfoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34EABF4E26E740A900B24629 /* TJLicenseInfoController.m */; };
 		34EABF5226E740A900B24629 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34EABF5026E740A900B24629 /* Main.storyboard */; };
@@ -83,6 +85,10 @@
 		3475B127275B4F5E00B8D07C /* TJXibTapView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TJXibTapView.m; sourceTree = "<group>"; };
 		3475B129275B4F6700B8D07C /* TJXibTapView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TJXibTapView.xib; sourceTree = "<group>"; };
 		34B661DA26F584E200F973DD /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		34B858A8275DA26000245033 /* TJUpdateView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TJUpdateView.h; sourceTree = "<group>"; };
+		34B858A9275DA26000245033 /* TJUpdateView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TJUpdateView.m; sourceTree = "<group>"; };
+		34B858AB275DF83B00245033 /* TJDataSourceController+Thread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TJDataSourceController+Thread.h"; sourceTree = "<group>"; };
+		34B858AC275DF83B00245033 /* TJDataSourceController+Thread.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "TJDataSourceController+Thread.m"; sourceTree = "<group>"; };
 		34EABF4426E740A900B24629 /* iOSShard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSShard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34EABF4726E740A900B24629 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		34EABF4826E740A900B24629 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -136,12 +142,12 @@
 			isa = PBXGroup;
 			children = (
 				3475B0EC275B001600B8D07C /* RMMacroDefinition.h */,
-				3475B0C9275AFF9500B8D07C /* RMFpsLabel.h */,
-				3475B0C6275AFF9500B8D07C /* RMFpsLabel.m */,
 				3475B0CA275AFF9500B8D07C /* TJPushDemoModel.h */,
 				3475B0C7275AFF9500B8D07C /* TJPushDemoModel.m */,
 				3475B0C8275AFF9500B8D07C /* TJPushDemoModel+cellStyle.h */,
 				3475B0CB275AFF9500B8D07C /* TJPushDemoModel+cellStyle.m */,
+				3475B0C9275AFF9500B8D07C /* RMFpsLabel.h */,
+				3475B0C6275AFF9500B8D07C /* RMFpsLabel.m */,
 			);
 			path = ConfigModel;
 			sourceTree = "<group>";
@@ -179,6 +185,8 @@
 				34EABF6126E749B300B24629 /* TJTextFiledViewController.m */,
 				3475B0F9275B0BE300B8D07C /* TJDataSourceController.h */,
 				3475B0FA275B0BE300B8D07C /* TJDataSourceController.m */,
+				34B858AB275DF83B00245033 /* TJDataSourceController+Thread.h */,
+				34B858AC275DF83B00245033 /* TJDataSourceController+Thread.m */,
 				3475B112275B3F5800B8D07C /* TJDataSourceController+UNUserNotificationCenter.h */,
 				3475B113275B3F5800B8D07C /* TJDataSourceController+UNUserNotificationCenter.m */,
 				3475B122275B4F3B00B8D07C /* TJXibTapController.h */,
@@ -240,6 +248,8 @@
 				3475B126275B4F5E00B8D07C /* TJXibTapView.h */,
 				3475B127275B4F5E00B8D07C /* TJXibTapView.m */,
 				3475B129275B4F6700B8D07C /* TJXibTapView.xib */,
+				34B858A8275DA26000245033 /* TJUpdateView.h */,
+				34B858A9275DA26000245033 /* TJUpdateView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -415,6 +425,7 @@
 				34EABF4926E740A900B24629 /* AppDelegate.m in Sources */,
 				34EABF5A26E740AB00B24629 /* main.m in Sources */,
 				3475B0DF275AFF9500B8D07C /* TJPushDemoModel.m in Sources */,
+				34B858AD275DF83B00245033 /* TJDataSourceController+Thread.m in Sources */,
 				3475B0F1275B028700B8D07C /* TJViewController.m in Sources */,
 				3475B118275B48C400B8D07C /* NSObject+TJCategory.m in Sources */,
 				3475B0F4275B03A000B8D07C /* UIView+TJCategory.m in Sources */,
@@ -427,6 +438,7 @@
 				3475B114275B3F5800B8D07C /* TJDataSourceController+UNUserNotificationCenter.m in Sources */,
 				3475B128275B4F5E00B8D07C /* TJXibTapView.m in Sources */,
 				3475B0E0275AFF9500B8D07C /* TJPushDemoModel+cellStyle.m in Sources */,
+				34B858AA275DA26000245033 /* TJUpdateView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -575,7 +587,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = JRJGSF2T2X;
 				INFOPLIST_FILE = iOSShard/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -598,7 +610,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = JRJGSF2T2X;
 				INFOPLIST_FILE = iOSShard/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

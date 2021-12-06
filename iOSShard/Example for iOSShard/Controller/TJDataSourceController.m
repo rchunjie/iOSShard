@@ -13,9 +13,10 @@
 #import "TJDataSourceItem.h"
 #import "TJCategory.h"
 #import <AVFoundation/AVFoundation.h>
-#import "TJDataSourceController+UNUserNotificationCenter.h"
 #import "TJCovariantItem.h"
 #import <Masonry/Masonry.h>
+#import "TJDataSourceController+Thread.h"
+#import "TJDataSourceController+UNUserNotificationCenter.h"
 
 
 void (*TJDatamsgsend)(id, SEL) = (void(*)(id, SEL))objc_msgSend;
@@ -30,7 +31,9 @@ void (*TJDatamsgsend)(id, SEL) = (void(*)(id, SEL))objc_msgSend;
     [super viewDidLoad];
     [self setupView];
 }
-
+- (void)moveSubViews{
+    [self _moveSubViews];
+}
 - (void)_moveSubViews{
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [self.view.subviews enumerateObjectsUsingBlock:^(__kindof UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
@@ -476,5 +479,6 @@ void (*TJDatamsgsend)(id, SEL) = (void(*)(id, SEL))objc_msgSend;
     infoLabel.attributedText = [[NSAttributedString alloc] initWithString:@"L1212312y379183917323123123123"];
     [self _moveSubViews];
 }
+
 
 @end
